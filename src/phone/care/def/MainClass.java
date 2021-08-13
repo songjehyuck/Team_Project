@@ -2,8 +2,13 @@ package phone.care.def;
 
 import java.util.Scanner;
 
+import phone.care.remote_WonJiUn.Remote_WonJiUn;
+
 public class MainClass {
 	public static void main(String[] args) {
+		
+		Remote_WonJiUn remote_wonjiun = new Remote_WonJiUn();
+		
 		Scanner input = new Scanner(System.in);
 		int num;
 		System.out.println("---핸드폰 기본 기능---");
@@ -25,7 +30,8 @@ public class MainClass {
 				System.out.println("카메라 기능");
 				break;
 			case 4: 
-				System.out.println("리모컨 기능");
+				remote_wonjiun.main(args);
+				break;
 			}
 		}
 	}
