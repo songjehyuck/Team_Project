@@ -21,8 +21,7 @@ public class MainClass {
 			num=input.nextInt();
 			switch(num) {
 			case 1:
-				player.main(args);
-				
+				player.main(args);				
 				break;
 			case 2:
 				System.out.println("벨소리 기능");
