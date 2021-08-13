@@ -38,79 +38,79 @@ public class Bell_jehyuck {
 		Bell01 b;
 		b=new Bell01();
 		while(true) {
-			System.out.println("1.ì „ì›");
-			System.out.println("2.ë²¨ì†Œë¦¬ ëª¨ë“œ");
-			System.out.println("3.ì§„ë™ ëª¨ë“œ");
-			System.out.println("4.ë¬´ìŒ ëª¨ë“œ");
-			System.out.println("5.í˜„ì¬ ìƒíƒœ \n >>>");
+			System.out.println("1.Àü¿ø");
+			System.out.println("2.º§¼Ò¸® ¸ğµå");
+			System.out.println("3.Áøµ¿ ¸ğµå");
+			System.out.println("4.¹«À½ ¸ğµå");
+			System.out.println("5.ÇöÀç »óÅÂ \n >>>");
 			num=input.nextInt();
 			switch(num) {
 			case 1:
 				b.power();
 				if(b.power==true) {
-					System.out.println("ì „ì›ì´ ë“¤ì–´ì™”ìŠµë‹ˆë‹¤.");
+					System.out.println("Àü¿øÀÌ µé¾î¿Ô½À´Ï´Ù.");
 				}else {
-					System.out.println("ì „ì›ì„ ë•ë‹ˆë‹¤.");
+					System.out.println("Àü¿øÀ» ²ü´Ï´Ù.");
 				}
-				System.out.println("ì „ì› ì„ íƒ");
+				System.out.println("Àü¿ø ¼±ÅÃ");
 				break;
 			case 2:
 				if(b.power==true) {
-					System.out.println("í˜„ì¬ ë²¨ì†Œë¦¬ í¬ê¸°:"+b.bellvol);
-					System.out.println("1.ë²¨ì†Œë¦¬ í¬ê¸° up, 2. ë²¨ì†Œë¦¬ í¬ê¸° down");
+					System.out.println("ÇöÀç º§¼Ò¸® Å©±â:"+b.bellvol);
+					System.out.println("1.º§¼Ò¸® Å©±â up, 2. º§¼Ò¸® Å©±â down");
 					int bellvol01=input.nextInt();
 					if(bellvol01==1) {
 						if(b.bellvol>=0&&b.bellvol<=10) {
 							b.bellvolUp();
 						}else {
-							System.out.println("í•´ë‹¹ ë²¨ì†Œë¦¬ í¬ê¸°ëŠ” ì„¤ì • ë¶ˆê°€í•©ë‹ˆë‹¤.");
+							System.out.println("ÇØ´ç º§¼Ò¸® Å©±â´Â ¼³Á¤ ºÒ°¡ÇÕ´Ï´Ù.");
 						}
 					}else if(bellvol01==2) {
 						if(b.bellvol>=0&&b.bellvol<=10) {
 							b.bellvolDown();
 						}else {
-							System.out.println("í•´ë‹¹ ë²¨ì†Œë¦¬ í¬ê¸°ëŠ” ì„¤ì • ë¶ˆê°€í•©ë‹ˆë‹¤.");
+							System.out.println("ÇØ´ç º§¼Ò¸® Å©±â´Â ¼³Á¤ ºÒ°¡ÇÕ´Ï´Ù.");
 						}
-					}System.out.println("í˜„ì¬ ë²¨ì†Œë¦¬ í¬ê¸° : "+b.bellvol);
+					}System.out.println("ÇöÀç º§¼Ò¸® Å©±â : "+b.bellvol);
 				}else {
-					System.out.println("ì „ì›ì„ ë¨¼ì € í‚¤ì„¸ìš”");
+					System.out.println("Àü¿øÀ» ¸ÕÀú Å°¼¼¿ä");
 				}break;
 			case 3:
 				if(b.power==true) {
-					System.out.println("í˜„ì¬ ì§„ë™ ì„¸ê¸°:"+b.vibrvol);
-					System.out.println("1.ì§„ë™ ì„¸ê¸° up, 2. ì§„ë™ ì„¸ê¸° down");
+					System.out.println("ÇöÀç Áøµ¿ ¼¼±â:"+b.vibrvol);
+					System.out.println("1.Áøµ¿ ¼¼±â up, 2. Áøµ¿ ¼¼±â down");
 					int vibrvol01=input.nextInt();
 					if(vibrvol01==1) {
 						if(b.vibrvol>=0&&b.vibrvol<=6) {
 							b.vibrvolUp();
 						}else {
-							System.out.println("í•´ë‹¹ ì§„ë™ ì„¸ê¸°ëŠ” ì„¤ì • ë¶ˆê°€í•©ë‹ˆë‹¤.");
+							System.out.println("ÇØ´ç Áøµ¿ ¼¼±â´Â ¼³Á¤ ºÒ°¡ÇÕ´Ï´Ù.");
 						}
 					}else if(vibrvol01==2) {
 						if(b.vibrvol>=0&&b.vibrvol<=6) {
 							b.vibrvolDown();
 						}else {
-							System.out.println("í•´ë‹¹ ì§„ë™ ì„¸ê¸°ëŠ” ì„¤ì • ë¶ˆê°€í•©ë‹ˆë‹¤.");
+							System.out.println("ÇØ´ç Áøµ¿ ¼¼±â´Â ¼³Á¤ ºÒ°¡ÇÕ´Ï´Ù.");
 						}
-					}System.out.println("í˜„ì¬ ì§„ë™ ì„¸ê¸° : "+b.vibrvol);
+					}System.out.println("ÇöÀç Áøµ¿ ¼¼±â : "+b.vibrvol);
 				}else {
-					System.out.println("ì „ì›ì„ ë¨¼ì € í‚¤ì„¸ìš”");
+					System.out.println("Àü¿øÀ» ¸ÕÀú Å°¼¼¿ä");
 				}break;
 			case 4:
 				if(b.power==true) {
 					b.mute();
-					System.out.println("í˜„ì¬ ìƒíƒœëŠ” ë¬´ìŒ ëª¨ë“œì…ë‹ˆë‹¤.");
+					System.out.println("ÇöÀç »óÅÂ´Â ¹«À½ ¸ğµåÀÔ´Ï´Ù.");
 				}else {
-					System.out.println("ì „ì›ì„ ë¨¼ì € í‚¤ì„¸ìš”");
+					System.out.println("Àü¿øÀ» ¸ÕÀú Å°¼¼¿ä");
 				}
-				System.out.println("í˜„ì¬ ëª¨ë“œ ìƒíƒœ => "+"ë²¨ì†Œë¦¬ í¬ê¸° : "+b.bellvol+" ì§„ë™ ì„¸ê¸° : "+b.vibrvol);
+				System.out.println("ÇöÀç ¸ğµå »óÅÂ => "+"º§¼Ò¸® Å©±â : "+b.bellvol+" Áøµ¿ ¼¼±â : "+b.vibrvol);
 				break;
 			case 5:
 				System.out.println(b.power+","+b.bellvol+","+b.vibrvol);
 				break;
 			default:
-				System.out.println("í•´ë‹¹ ê¸°ëŠ¥ì€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
+				System.out.println("ÇØ´ç ±â´ÉÀº Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.");
 			}	
-		}//ìˆ˜ì • ì¤‘
+		}//¼öÁ¤ Áß
 	}
 }
