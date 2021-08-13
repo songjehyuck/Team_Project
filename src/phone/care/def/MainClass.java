@@ -2,8 +2,13 @@ package phone.care.def;
 
 import java.util.Scanner;
 
+import phone.care.mp3_NegativeGuy.Mp3_NegativeGuy;
+
 public class MainClass {
 	public static void main(String[] args) {
+		
+		Mp3_NegativeGuy player = new Mp3_NegativeGuy();
+		
 		Scanner input = new Scanner(System.in);
 		int num;
 		System.out.println("---핸드폰 기본 기능---");
@@ -16,7 +21,8 @@ public class MainClass {
 			num=input.nextInt();
 			switch(num) {
 			case 1:
-				System.out.println("뮤직플레이어");
+				player.main(args);
+				
 				break;
 			case 2:
 				System.out.println("벨소리 기능");
