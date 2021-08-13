@@ -5,7 +5,7 @@ class Music_Play {
 	static int vol=3;
 	int music=0;
 	int stat=0;
-	String dpM = "°î ´ë±âÁß..";
+	String dpM = "ê³¡ ëŒ€ê¸°ì¤‘..";
 	Scanner sc = new Scanner(System.in);
 	
 	public void setVol(int vol) {
@@ -57,18 +57,18 @@ class Music_Play {
 	
 	public void play() {
 		if(getMusic()==0) {
-			System.out.println("Àç»ı ÇÒ À½¾Ç¹øÈ£ ÀÔ·Â(1~100)");
+			System.out.println("ì¬ìƒ í•  ìŒì•…ë²ˆí˜¸ ì…ë ¥(1~100)");
 			System.out.print(">>> ");
 			int sel = sc.nextInt();
 			if(sel>100) {
 				return;
 			}
 			setMusic(sel);
-			dpM = "¹ø °î Àç»ı Áß...";
+			dpM = "ë²ˆ ê³¡ ì¬ìƒ ì¤‘...";
 			return;
 		}
 		else if(getMusic()!=0) {
-			dpM = "¹ø °î Àç»ı Áß...";
+			dpM = "ë²ˆ ê³¡ ì¬ìƒ ì¤‘...";
 			return;
 		}		
 	}
@@ -76,7 +76,7 @@ class Music_Play {
 	public void pause(int sel) {
 		setStat(sel);
 		if(getStat()==2) {
-			dpM = "¹ø °îÀ» ¸ØÃè½À´Ï´Ù."; 
+			dpM = "ë²ˆ ê³¡ì„ ë©ˆì·„ìŠµë‹ˆë‹¤."; 
 		}
 	}
 	
@@ -88,7 +88,7 @@ class Music_Play {
 			setMusic(music+1);
 			return;
 		}
-		dpM = "¹ø °îÀº ¸¶Áö¸· °îÀÔ´Ï´Ù."; 
+		dpM = "ë²ˆ ê³¡ì€ ë§ˆì§€ë§‰ ê³¡ì…ë‹ˆë‹¤."; 
 	}
 	
 	public void previous() {
@@ -97,15 +97,15 @@ class Music_Play {
 		else if(getMusic()>100 || getMusic() != 1) {
 			setMusic(music-1);
 		}
-		else dpM = "¹øÂ° °îÀÔ´Ï´Ù."; 
+		else dpM = "ë²ˆì§¸ ê³¡ì…ë‹ˆë‹¤."; 
 	}
 	
 	public void volume() {
-		System.out.println("¿øÇÏ´Â º¼·ıÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä(0~5)");
+		System.out.println("ì›í•˜ëŠ” ë³¼ë¥¨ì„ ì…ë ¥í•´ì£¼ì„¸ìš”(0~5)");
 		System.out.print(">>> ");
 		int vol = sc.nextInt();
 		if(vol>5) {
-			System.out.println("ÃÖ´ë º¼·ıÀº 5ÀÔ´Ï´Ù");
+			System.out.println("ìµœëŒ€ ë³¼ë¥¨ì€ 5ì…ë‹ˆë‹¤");
 			vol = Music_Play.vol;
 		}
 		else if(vol<6 && vol>=0){

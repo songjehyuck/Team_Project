@@ -12,13 +12,13 @@ public class Camera_Hoonisme {
 	
 	public void powerOnOff() {
 			Scanner in = new Scanner(System.in);
-			System.out.println("Ä«¸Ş¶ó¸¦ ÀÛµ¿ ÇÏ½Ã°Ú½À´Ï±î??(y,n)");
+			System.out.println("ì¹´ë©”ë¼ë¥¼ ì‘ë™ í•˜ì‹œê² ìŠµë‹ˆê¹Œ??(y,n)");
 
 			char answer = in.next().charAt(0);
 
 			if(answer=='y' || answer=='Y') {
 
-				System.out.println("Ä«¸Ş¶ó°¡ ÄÑÁı´Ï´Ù.");
+				System.out.println("ì¹´ë©”ë¼ê°€ ì¼œì§‘ë‹ˆë‹¤.");
 
 				this.power = true;
 
@@ -26,7 +26,7 @@ public class Camera_Hoonisme {
 
 			else {
 
-				System.out.println("Ä«¸Ş¶ó¸¦ ²ü´Ï´Ù.");
+				System.out.println("ì¹´ë©”ë¼ë¥¼ ë•ë‹ˆë‹¤.");
 				
 				this.power= false;
 				
@@ -52,24 +52,24 @@ public class Camera_Hoonisme {
 	
 
 	public void photoOn() {
-			System.out.println("»çÁø±â´ÉÀÌ ÄÑÁı´Ï´Ù.");
+			System.out.println("ì‚¬ì§„ê¸°ëŠ¥ì´ ì¼œì§‘ë‹ˆë‹¤.");
 				
 		}
 	public void videoOn() {
-		System.out.println("ºñµğ¿À±â´ÉÀÌ ÄÑÁı´Ï´Ù.");
+		System.out.println("ë¹„ë””ì˜¤ê¸°ëŠ¥ì´ ì¼œì§‘ë‹ˆë‹¤.");
 		
 	}
 			
 		
 	public void setVideo() {
 		Scanner in = new Scanner(System.in);
-		System.out.println("°è¼Ó ÃÔ¿µ ÇÒ±î¿ä? (y,n)");
+		System.out.println("ê³„ì† ì´¬ì˜ í• ê¹Œìš”? (y,n)");
 		
 		char answer = in.next().charAt(0);
 		
 		if(answer=='y' || answer=='Y') {
 			
-			System.out.println("°è¼Ó ÃÔ¿µÇÕ´Ï´Ù.");
+			System.out.println("ê³„ì† ì´¬ì˜í•©ë‹ˆë‹¤.");
 			
 			this.video = true;
 			
@@ -79,7 +79,7 @@ public class Camera_Hoonisme {
 			
 			this.video= false;
 			
-			System.out.println("ÃÔ¿µÀÌ ²¨Áı´Ï´Ù.");
+			System.out.println("ì´¬ì˜ì´ êº¼ì§‘ë‹ˆë‹¤.");
 			
 			
 			
@@ -90,13 +90,13 @@ public class Camera_Hoonisme {
 
 public void lightOnOff() {
 	Scanner in = new Scanner(System.in);
-	System.out.println("¶óÀÌÆ® ¼³Á¤ (y,n)");
+	System.out.println("ë¼ì´íŠ¸ ì„¤ì • (y,n)");
 	
 	char answer = in.next().charAt(0);
 	
 	if(answer=='y' || answer=='Y') {
 		
-		System.out.println("¶óÀÌÆ®°¡ ÄÑÁı´Ï´Ù.");
+		System.out.println("ë¼ì´íŠ¸ê°€ ì¼œì§‘ë‹ˆë‹¤.");
 		
 		this.light = true;
 		
@@ -106,7 +106,7 @@ public void lightOnOff() {
 		
 		this.light= false;
 		
-		System.out.println("¶óÀÌÆ®°¡ ²¨Áı´Ï´Ù.");
+		System.out.println("ë¼ì´íŠ¸ê°€ êº¼ì§‘ë‹ˆë‹¤.");
 		
 		
 		
@@ -135,19 +135,19 @@ public void setTimmer(int time) {
 	else {
 	for(int i=1;i<=time;i++) {
 		System.out.println(i);
-	}System.out.println("Âï½À´Ï´Ù.");
+	}System.out.println("ì°ìŠµë‹ˆë‹¤.");
 	}
 	}
 
 public void displayCh() {
 	Scanner in = new Scanner(System.in);
-	System.out.println("³»,¿ÜºÎ Ä«¸Ş¶ó ÀüÈ¯ (i,o)");
+	System.out.println("ë‚´,ì™¸ë¶€ ì¹´ë©”ë¼ ì „í™˜ (i,o)");
 	
 	char answer = in.next().charAt(0);
 	
 	if(answer=='i' || answer=='I') {
 		
-		System.out.println("³»ºÎ Ä«¸Ş¶ó·Î ÀüÈ¯ÇÕ´Ï´Ù.");
+		System.out.println("ë‚´ë¶€ ì¹´ë©”ë¼ë¡œ ì „í™˜í•©ë‹ˆë‹¤.");
 		
 		this.camera = true;
 		
@@ -157,7 +157,7 @@ public void displayCh() {
 		
 		this.camera= false;
 		
-		System.out.println("¿ÜºÎ Ä«¸Ş¶ó·Î ÀüÈ¯ÇÕ´Ï´Ù.");
+		System.out.println("ì™¸ë¶€ ì¹´ë©”ë¼ë¡œ ì „í™˜í•©ë‹ˆë‹¤.");
 		
 		
 		
@@ -179,28 +179,28 @@ public void setCamera(boolean camera) {
 		cafc.powerOnOff();
 		if(cafc.getPower()== true) {
 				while(true) {
-					System.out.println("1.»çÁø ±â´É");
-					System.out.println("2.µ¿¿µ»ó ±â´É");
-					System.out.println("3.È­¸éÀüÈ¯ ±â´É");
-					System.out.println("4.Á¾·á");
+					System.out.println("1.ì‚¬ì§„ ê¸°ëŠ¥");
+					System.out.println("2.ë™ì˜ìƒ ê¸°ëŠ¥");
+					System.out.println("3.í™”ë©´ì „í™˜ ê¸°ëŠ¥");
+					System.out.println("4.ì¢…ë£Œ");
 					System.out.print(">>>");
 					int r = input.nextInt();
 					if(r == 1) {cafc.photoOn();
 					while(true) {
 					
-					System.out.println("1.»çÁø Âï±â");	
-					System.out.println("2.¶óÀÌÆ® Å°±â");	
-					System.out.println("3.Å¸ÀÌ¸Ó ±â´É");	
-					System.out.println("4.Á¾·á");	
+					System.out.println("1.ì‚¬ì§„ ì°ê¸°");	
+					System.out.println("2.ë¼ì´íŠ¸ í‚¤ê¸°");	
+					System.out.println("3.íƒ€ì´ë¨¸ ê¸°ëŠ¥");	
+					System.out.println("4.ì¢…ë£Œ");	
 					System.out.print(">>>");	
 					int c = input.nextInt();
 						switch(c) {
-						case 1: System.out.println("ºêÀÌ ÇÏ¼¼¿ä~");continue;
+						case 1: System.out.println("ë¸Œì´ í•˜ì„¸ìš”~");continue;
 						
 						case 2: cafc.lightOnOff();continue;
 								
 						case 3:
-							System.out.print("Å¸ÀÌ¸Ó ¼³Á¤ : ");
+							System.out.print("íƒ€ì´ë¨¸ ì„¤ì • : ");
 							int t = input.nextInt(); 
 							cafc.setTimmer(t);
 							continue;
@@ -211,14 +211,14 @@ public void setCamera(boolean camera) {
 					}
 					else if(r == 2) {cafc.videoOn();
 					while(true) {
-						System.out.println("1.µ¿¿µ»ó Âï±â");	
-						System.out.println("2.¶óÀÌÆ® Å°±â");	
-						System.out.println("3.Á¾·á");	
+						System.out.println("1.ë™ì˜ìƒ ì°ê¸°");	
+						System.out.println("2.ë¼ì´íŠ¸ í‚¤ê¸°");	
+						System.out.println("3.ì¢…ë£Œ");	
 						System.out.print(">>>");	
 						int c = input.nextInt();
 					
 						switch(c) {
-						case 1 : System.out.println("ÃÔ¿µÀ» ½ÃÀÛÇÕ´Ï´Ù.");
+						case 1 : System.out.println("ì´¬ì˜ì„ ì‹œì‘í•©ë‹ˆë‹¤.");
 								 cafc.setVideo();continue;
 						case 2 : cafc.lightOnOff();continue;
 						
@@ -232,7 +232,7 @@ public void setCamera(boolean camera) {
 						
 					}
 					else if(r == 4) {
-						System.out.println("Ä«¸Ş¶ó¸¦ Á¾·áÇÕ´Ï´Ù.");
+						System.out.println("ì¹´ë©”ë¼ë¥¼ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 						break;
 					}
 				}

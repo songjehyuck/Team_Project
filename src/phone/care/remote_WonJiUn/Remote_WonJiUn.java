@@ -44,7 +44,7 @@ class Method{
 			if(sel == 1) {
 				if(vol == 30) {
 					vol = 30;
-					System.out.println("´õ´Â ¿Ã¸± ¼ö ¾ø½À´Ï´Ù");
+					System.out.println("ë”ëŠ” ì˜¬ë¦´ ìˆ˜ ì—†ìŠµë‹ˆë‹¤");
 				}
 				else{
 					vol++;
@@ -54,14 +54,14 @@ class Method{
 			else {
 				if(vol == 0) {
 					vol = 0;
-					System.out.println("´õ´Â ³»¸± ¼ö ¾ø½À´Ï´Ù");
+					System.out.println("ë”ëŠ” ë‚´ë¦´ ìˆ˜ ì—†ìŠµë‹ˆë‹¤");
 				}else
 					vol--;
 			return vol;
 			}
 		}
 		else {
-			System.out.println("Àü¿øÀÌ ²¨Á®ÀÖ½À´Ï´Ù");
+			System.out.println("ì „ì›ì´ êº¼ì ¸ìˆìŠµë‹ˆë‹¤");
 			return vol;
 		}
 	}
@@ -75,27 +75,27 @@ class Method{
 				vol = volume(0);
 			}
 			else if(sel != 3) {
-				System.out.println("1~3Áß¿¡ ÇÏ³ª¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä");
+				System.out.println("1~3ì¤‘ì— í•˜ë‚˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”");
 			}
 			
 	}
 	public void list(String str) {
-		if(str.equals("º¼·ı")) {
-			System.out.println("ÇöÀç " + str + " : " + vol);
+		if(str.equals("ë³¼ë¥¨")) {
+			System.out.println("í˜„ì¬ " + str + " : " + vol);
 		}
-		else if(str.equals("Ã¤³Î")) {
-			System.out.println("ÇöÀç " + str + " : " + chan);
+		else if(str.equals("ì±„ë„")) {
+			System.out.println("í˜„ì¬ " + str + " : " + chan);
 		}
-		System.out.println("1. " + str + " ¿Ã¸®±â");
-		System.out.println("2. " + str + " ³»¸®±â");
-		System.out.println("3. ³ª°¡±â");
+		System.out.println("1. " + str + " ì˜¬ë¦¬ê¸°");
+		System.out.println("2. " + str + " ë‚´ë¦¬ê¸°");
+		System.out.println("3. ë‚˜ê°€ê¸°");
 	}
 	public int channel(int sel) {
 		if(pwr == 1) {
 			if(sel == 1) {
 				if(chan == 30) {
 					chan = 30;
-					System.out.println("<´õ´Â ¿Ã¸± ¼ö ¾ø½À´Ï´Ù>");
+					System.out.println("<ë”ëŠ” ì˜¬ë¦´ ìˆ˜ ì—†ìŠµë‹ˆë‹¤>");
 				}
 				else{
 					chan++;
@@ -105,14 +105,14 @@ class Method{
 			else {
 				if(chan == 1) {
 					chan = 1;
-					System.out.println("<´õ´Â ³»¸± ¼ö ¾ø½À´Ï´Ù>");
+					System.out.println("<ë”ëŠ” ë‚´ë¦´ ìˆ˜ ì—†ìŠµë‹ˆë‹¤>");
 				}else
 					chan--;
 			return chan;
 			}
 		}
 		else {
-			System.out.println("<Àü¿øÀÌ ²¨Á®ÀÖ½À´Ï´Ù>");
+			System.out.println("<ì „ì›ì´ êº¼ì ¸ìˆìŠµë‹ˆë‹¤>");
 			return chan;
 		}
 	}
@@ -126,7 +126,7 @@ class Method{
 			chan = channel(0);
 		}
 		else if(sel != 3) {
-			System.out.println("<1~3Áß¿¡ ÇÏ³ª¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä>");
+			System.out.println("<1~3ì¤‘ì— í•˜ë‚˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”>");
 		}
 		
 }
@@ -137,7 +137,7 @@ class Method{
 public class Remote_WonJiUn {
 public static void main(String[] args) {
 		
-		//¸®¸ğÄÁ
+		//ë¦¬ëª¨ì»¨
 		Method m = new Method();
 		
 		int num = 0;
@@ -146,13 +146,13 @@ public static void main(String[] args) {
 		String power = "OFF";
 		
 		while(flag) {
-			System.out.println("==== ¸®¸ğÄÁ ±â´É ====");
-			System.out.println("ÇöÀçÀü¿ø : " + power);
-			System.out.println("º¼·ı : " + m.getVol() + " / Ã¤³Î : " + m.getChan());
-			System.out.println("1. TV Àü¿ø ON/OFF");
-			System.out.println("2. º¼·ı Á¶Àı");
-			System.out.println("3. Ã¤³Î ÀÌµ¿");
-			System.out.println("4. Á¾·á");
+			System.out.println("==== ë¦¬ëª¨ì»¨ ê¸°ëŠ¥ ====");
+			System.out.println("í˜„ì¬ì „ì› : " + power);
+			System.out.println("ë³¼ë¥¨ : " + m.getVol() + " / ì±„ë„ : " + m.getChan());
+			System.out.println("1. TV ì „ì› ON/OFF");
+			System.out.println("2. ë³¼ë¥¨ ì¡°ì ˆ");
+			System.out.println("3. ì±„ë„ ì´ë™");
+			System.out.println("4. ì¢…ë£Œ");
 			System.out.print(">>> ");
 			num = m.select();
 			
@@ -171,22 +171,22 @@ public static void main(String[] args) {
 					break;
 				case 2:
 					do {
-						m.list("º¼·ı");
+						m.list("ë³¼ë¥¨");
 						m.volfunc();
 					}while(m.getSel() !=3);
 					break;
 				case 3:
 					do {
-						m.list("Ã¤³Î");
+						m.list("ì±„ë„");
 						m.chanfunc();
 					}while(m.getSel() !=3);
 					break;
 					
 				case 4: 
-					System.out.println("<¸®¸ğÄÁÀ» Á¾·áÇÕ´Ï´Ù>");
+					System.out.println("<ë¦¬ëª¨ì»¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤>");
 					flag = m.flag(0); 
 					break;
-				default: System.out.println("<1~4Áß¿¡ ÇÏ³ª¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä>");
+				default: System.out.println("<1~4ì¤‘ì— í•˜ë‚˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”>");
 			}
 		
 

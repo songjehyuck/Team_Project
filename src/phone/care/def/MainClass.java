@@ -21,12 +21,12 @@ public class MainClass {
 		Camera_Hoonisme cafc = new Camera_Hoonisme();
 		
 		int num;
-		System.out.println("---ÇÚµåÆù ±âº» ±â´É---");
+		System.out.println("---í•¸ë“œí° ê¸°ë³¸ ê¸°ëŠ¥---");
 		while(true) {
-			System.out.println("1.¹ÂÁ÷ÇÃ·¹ÀÌ¾î");
-			System.out.println("2.º§¼Ò¸® ±â´É");
-			System.out.println("3.Ä«¸Ş¶ó ±â´É");
-			System.out.println("4.¸®¸ğÄÁ ±â´É");
+			System.out.println("1.ë®¤ì§í”Œë ˆì´ì–´");
+			System.out.println("2.ë²¨ì†Œë¦¬ ê¸°ëŠ¥");
+			System.out.println("3.ì¹´ë©”ë¼ ê¸°ëŠ¥");
+			System.out.println("4.ë¦¬ëª¨ì»¨ ê¸°ëŠ¥");
 			System.out.print(">>>> : ");
 			num=input.nextInt();
 			switch(num) {
@@ -34,10 +34,10 @@ public class MainClass {
 				player.main(args);				
 				break;
 			case 2:
-				System.out.println("º§¼Ò¸® ±â´É");
+				System.out.println("ë²¨ì†Œë¦¬ ê¸°ëŠ¥");
 				break;
 			case 3:
-				System.out.println("Ä«¸Ş¶ó ±â´É");
+				System.out.println("ì¹´ë©”ë¼ ê¸°ëŠ¥");
 				cafc.main(args);
 			case 4: 
 				remote_wonjiun.main(args);
