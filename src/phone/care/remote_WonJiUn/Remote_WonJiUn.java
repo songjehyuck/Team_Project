@@ -82,16 +82,13 @@ class Method{
 	public void list(String str) {
 		if(str.equals("볼륨")) {
 			System.out.println("현재 " + str + " : " + vol);
-			System.out.println("1. " + str + " 올리기");
-			System.out.println("2. " + str + " 내리기");
-			System.out.println("3. 나가기");
 		}
 		else if(str.equals("채널")) {
 			System.out.println("현재 " + str + " : " + chan);
-			System.out.println("1. " + str + " 올리기");
-			System.out.println("2. " + str + " 내리기");
-			System.out.println("3. 나가기");
 		}
+		System.out.println("1. " + str + " 올리기");
+		System.out.println("2. " + str + " 내리기");
+		System.out.println("3. 나가기");
 	}
 	public int channel(int sel) {
 		if(pwr == 1) {
@@ -149,7 +146,7 @@ public static void main(String[] args) {
 		String power = "OFF";
 		
 		while(flag) {
-			System.out.println("==== 리모컨 ====");
+			System.out.println("==== 리모컨 기능 ====");
 			System.out.println("현재전원 : " + power);
 			System.out.println("볼륨 : " + m.getVol() + " / 채널 : " + m.getChan());
 			System.out.println("1. TV 전원 ON/OFF");
